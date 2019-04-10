@@ -14,7 +14,6 @@ public:
 	job* pop();
 	int play();
 	void newpush(job *j);
-	void print();
 	~queue();
 };
 

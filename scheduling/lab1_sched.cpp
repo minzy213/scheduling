@@ -41,8 +41,8 @@ void main()
 	int i = 0;		//어떤 알고리즘을 선택할 것인지 저장할 변수
 	cout << "알고리즘을 선택하세요\n1 : FCFS\n2 : RR\n3 : MLFQ\n4 : Lottery\n=====================" << endl;
 	cin >> i;
-	if (i == 4) {	//lottery일때는 수행시간, 도착시간 필요 없으므로 따로 돌린다
-		lottery l;
+	if (i == 4) {			//lottery일때는 수행시간, 도착시간 필요 없으므로 따로 돌린다
+		lottery l;			//lottery 실행
 		l.lotterymain();
 
 	}
@@ -54,13 +54,13 @@ void main()
 		int jobc;	//job이 총 몇 개인지 저장할 변수
 		cout << "job의 갯수를 입력하세요 : ";
 		cin >> jobc;//lotttery 이외의 경우에는 수행시간, 도착시간 필요하니까 입력받는다
-		//job들의 수행 시간과 도착 시간을 저장하기 위한 배열
-		int** jobs = new int*[jobc];
+		
+		int** jobs = new int*[jobc];		//job들의 수행 시간과 도착 시간을 저장하기 위한 배열
 		for (m = 0; m < jobc; m++) {
 			jobs[m] = new int[2];
 		}
 		//job들의 수행 시간과 도착시간 입력
-		for (m = 0; m < jobc; m++) {
+		for (m = 0; m < jobc; m++) {		
 			cout << m + 1 << "번째 job의 도착시간을 입력하세요 : ";
 			cin >> jobs[m][0];
 			cout << m + 1 << "번째 job의 수행시간을 입력하세요 : ";
@@ -86,7 +86,7 @@ void main()
 		}
 
 
-		if (i == 3) {
+		if (i == 3) {	//mlfq 실행
 			mlfq mlfq1 = { jobs, jobc };
 			mlfq1.mlfqmain();
 		}
