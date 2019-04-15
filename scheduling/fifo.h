@@ -1,4 +1,3 @@
-#pragma once
 #include "job.h"
 #include <stdlib.h>
 #include <string.h>

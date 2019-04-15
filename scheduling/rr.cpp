@@ -10,6 +10,12 @@ rr::rr(int** _jobs, int _jobc, int tq)
 		time = time + jobs[m][0];
 	}
 	q.tq = tq;		//입력받은 tq를 저장
+
+	int time;	// 총 예상시간 더해서 모든 프로세스 끝나는 시간 구한다. 만약 cpu가 쉬는 시간이 나오면 ++해줌
+	int now;	// 지금 시간을 나타낸다. 몇 초가 지났는지 알려줌.
+	int k;		//몇번째 job까지 ready 상태가 되었는지 확인
+	char name;
+	string print;
 }
 
 

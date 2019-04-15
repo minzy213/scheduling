@@ -9,6 +9,12 @@ mlfq::mlfq(int** _jobs, int _jobc)
 	for (m = 0; m < jobc; m++) {		//총 실행시간이 얼마나 되는지 계산
 		time = time + jobs[m][0];
 	}
+	time = 0;	// 총 예상시간 더해서 모든 프로세스 끝나는 시간 구한다. 만약 cpu가 쉬는 시간이 나오면 ++해줌
+	now = 0;	// 지금 시간을 나타낸다. 몇 초가 지났는지 알려줌.
+	k = 0;		//몇번째 job까지 ready 상태가 되었는지 확인
+
+	name = 'A';
+	print = "|";
 }
 
 void mlfq::newjob()
