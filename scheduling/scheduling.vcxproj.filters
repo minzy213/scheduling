@@ -30,6 +30,12 @@
     <ClInclude Include="lottery.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="fifo.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="rr.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="lab1_sched_test.cpp">
@@ -48,6 +54,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="lottery.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="fifo.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="rr.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

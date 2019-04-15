@@ -1,7 +1,9 @@
 #include "job.h"
 
 
+job::job() {
 
+}
 job::job(int a, int s, char n)
 {		//job의 생성자. 
 	arrtime = a;

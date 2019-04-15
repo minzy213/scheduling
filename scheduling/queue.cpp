@@ -30,6 +30,7 @@ job* queue::pop()
 		job* tmp = head;		//현재 있는 job을 tmp에 저장해 두고
 		head = NULL;			//head와 tail을 모두 null로 설정한 다음
 		tail = NULL;
+		count--;			//큐에서 job 하나가 사라졌으므로 -- 해 준다.
 		return tmp;				//tmp를 리턴해 준다.
 
 	}
@@ -37,9 +38,9 @@ job* queue::pop()
 		job* tmp = head;			//현재 head를 tmp에 저장해 두고
 		head = head->getnext();		//head의 next를 head로 지정하고
 		head->~job();				// 큐의 맨 앞의 요소를 지우고
+		count--;			//큐에서 job 하나가 사라졌으므로 -- 해 준다.
 		return tmp;					//tmp를 리턴한다
 	}
-	count--;			//큐에서 job 하나가 사라졌으므로 -- 해 준다.
 }
 
 int queue::play()

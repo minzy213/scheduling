@@ -146,19 +146,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="fifo.cpp" />
     <ClCompile Include="job.cpp" />
     <ClCompile Include="lab1_sched.cpp" />
     <ClCompile Include="lab1_sched_test.cpp" />
     <ClCompile Include="lottery.cpp" />
     <ClCompile Include="mlfq.cpp" />
     <ClCompile Include="queue.cpp" />
+    <ClCompile Include="rr.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="fifo.h" />
     <ClInclude Include="job.h" />
     <ClInclude Include="lab1_sched_types.h" />
     <ClInclude Include="lottery.h" />
     <ClInclude Include="mlfq.h" />
     <ClInclude Include="queue.h" />
+    <ClInclude Include="rr.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
