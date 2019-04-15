@@ -62,6 +62,6 @@ void rr::RR_job()
 		}
 	}
 
-	cout << "MLFQ : " << print << endl;		//모든 job의 수행이 다 끝나면 어떤 순서로 실행되었는지 출력한다.
+	cout << "RR : " << print << endl;		//모든 job의 수행이 다 끝나면 어떤 순서로 실행되었는지 출력한다.
 
 }
