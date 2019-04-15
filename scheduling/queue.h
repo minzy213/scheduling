@@ -1,5 +1,5 @@
-#pragma once
-#include "job.h"
+
+#include "lab1_sched_types.h"
 
 class queue
 {

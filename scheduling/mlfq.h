@@ -1,5 +1,5 @@
-#include "queue.h"
-#include "string"
+
+#include "lab1_sched_types.h"
 class mlfq
 {
 	int m, n;	//for문을 위한 변수

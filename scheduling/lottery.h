@@ -1,7 +1,5 @@
-#include <iostream>
 
-#include <stdlib.h>
-#include <time.h>
+#include "lab1_sched_types.h"
 
 using namespace std;
 class lottery

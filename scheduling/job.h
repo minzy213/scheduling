@@ -1,5 +1,5 @@
-#include <iostream>
-using namespace std;
+
+#include "lab1_sched_types.h"
 
 class job
 {

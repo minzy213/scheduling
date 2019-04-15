@@ -1,7 +1,5 @@
-#include "job.h"
-#include <stdlib.h>
-#include <string.h>
-#include <string>
+
+#include "lab1_sched_types.h"
 class fifo
 {
 public:
