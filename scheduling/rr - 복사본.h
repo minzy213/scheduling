@@ -7,7 +7,6 @@ public:
 	~rr();
 
 	void RR_job();
-	///////////////
 	int m, n;	//for문을 위한 변수
 	int** jobs;	//job들의 수행시간, 도착시간 저장한 배열
 	int jobc;	//job의 갯수 저장한 변수
